@@ -1,0 +1,73 @@
+{
+  "name": "@neabyte/dataset-generator",
+  "description": "Generate unique rows from templates and named lists",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "unbuild --minify",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "rm -rf dist && npm run build"
+  },
+  "keywords": [
+    "cartesian-product",
+    "combinatorial-text",
+    "data-augmentation",
+    "data-synthesis",
+    "dataset-generator",
+    "lexicon",
+    "named-slots",
+    "parameter-expansion",
+    "placeholder",
+    "prompt-templates",
+    "row-generation",
+    "sentence-templates",
+    "slot-filling",
+    "string-templates",
+    "synthetic-data",
+    "template-expansion",
+    "template-filling",
+    "text-datasets",
+    "text-generation",
+    "unique-rows"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@typescript/typescript6": "^6.0.2",
+    "unbuild": "^3.6.1"
+  },
+  "author": {
+    "name": "NeaByteLab",
+    "email": "me@neabyte.com",
+    "url": "https://github.com/NeaByteLab"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeaByteLab/Dataset-Generator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NeaByteLab/Dataset-Generator/issues"
+  },
+  "homepage": "https://github.com/NeaByteLab/Dataset-Generator#readme",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
